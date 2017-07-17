@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alipay.lyf.rxjavasample.ui.MainActivity">
+    <Button
+        android:id="@+id/bt_gotonext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <ProgressBar
+        android:layout_marginBottom="@dimen/common_padding_left_15"
+        android:layout_marginTop="@dimen/common_padding_left_15"
+        android:id="@+id/progress_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_progress"
+        android:max="100"
+        android:progressTint="@color/pg_yellow"
+        android:progress="0"/>
+    <com.jiang.common.base.irecyclerview.IRecyclerView
+        android:visibility="gone"
+        app:refreshEnabled="true"
+        app:refreshHeaderLayout="@layout/item_loading_header"
+        android:id="@+id/irv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jiang.common.base.irecyclerview.IRecyclerView>
+
+</LinearLayout>

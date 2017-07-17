@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alipay.lyf.rxjavasample.ui.MediaActivity">
+<com.example.video.media.IjkPlayerView
+    android:id="@+id/ijkvideo"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+</com.example.video.media.IjkPlayerView>
+</LinearLayout>
